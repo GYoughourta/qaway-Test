@@ -12,7 +12,7 @@ public class TempConverter {
             System.out.println("1- Celsius-Fahrenheit");
             System.out.println("2- Fahrenheit-Celsius");
             int val = sc.nextInt();
-            while (val>2 ){
+            while (val>2 || val <1){
                 System.out.println("invalid entry please enter 1 (oui) or 2 (non)");
                 val= sc.nextInt();
             }
@@ -23,7 +23,7 @@ public class TempConverter {
                 System.out.println("°C -------->"+F+"°F");
                 System.out.println("voulez-vous convertir d'autres températures ? ");
                 x = sc.nextInt();
-                while (x>2 ){
+                while (x>2 || x<1){
                     System.out.println("invalid entry please enter 1 (oui) or 2 (non)");
                     x = sc.nextInt();
                 }
@@ -41,7 +41,7 @@ public class TempConverter {
                 System.out.println("°F -------->"+C+"°C");
                 System.out.println("voulez-vous convertir d'autres températures ? ");
                 x = sc.nextInt();
-                while (x>2){
+                while (x>2 || x<1){
                     System.out.println("invalid entry please enter 1 (oui) or 2 (non)");
                     x = sc.nextInt();
                 }
